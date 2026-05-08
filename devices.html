@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Devices & Tools</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Outfit',sans-serif;
+
+    background:#050505;
+
+    color:white;
+
+    overflow-x:hidden;
+}
+
+/* ---------- NAV ---------- */
+
+nav{
+
+    position:fixed;
+
+    width:100%;
+
+    top:0;
+    left:0;
+
+    display:flex;
+
+    justify-content:space-between;
+    align-items:center;
+
+    padding:28px 70px;
+
+    background:rgba(0,0,0,0.35);
+
+    backdrop-filter:blur(10px);
+
+    z-index:1000;
+}
+
+.logo{
+
+    font-size:28px;
+
+    font-weight:700;
+}
+
+.nav-links{
+
+    display:flex;
+
+    gap:35px;
+}
+
+.nav-links a{
+
+    text-decoration:none;
+
+    color:#d0d0d0;
+
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+
+    color:white;
+}
+
+/* ---------- HERO ---------- */
+
+.hero{
+
+    padding:180px 8% 80px 8%;
+
+    text-align:center;
+}
+
+.hero h1{
+
+    font-size:80px;
+
+    margin-bottom:25px;
+}
+
+.hero p{
+
+    color:#c0c0c0;
+
+    font-size:22px;
+
+    max-width:900px;
+
+    margin:auto;
+
+    line-height:1.8;
+}
+
+/* ---------- SECTION ---------- */
+
+.section{
+
+    padding:80px 8%;
+}
+
+/* ---------- GRID ---------- */
+
+.grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(320px,1fr));
+
+    gap:30px;
+}
+
+/* ---------- CARD ---------- */
+
+.card{
+
+    background:rgba(255,255,255,0.04);
+
+    border:1px solid rgba(255,255,255,0.08);
+
+    border-radius:28px;
+
+    padding:35px;
+
+    transition:0.35s;
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    background:rgba(255,255,255,0.06);
+}
+
+.card h2{
+
+    font-size:28px;
+
+    margin-bottom:20px;
+}
+
+.card p{
+
+    color:#c8c8c8;
+
+    line-height:1.8;
+
+    font-size:16px;
+}
+
+/* ---------- SOFTWARE ---------- */
+
+.software{
+
+    margin-top:90px;
+}
+
+.software h2{
+
+    font-size:50px;
+
+    margin-bottom:35px;
+}
+
+.software-grid{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:18px;
+}
+
+.software-grid span{
+
+    padding:16px 24px;
+
+    border-radius:40px;
+
+    background:rgba(255,255,255,0.05);
+
+    border:1px solid rgba(255,255,255,0.08);
+
+    font-size:17px;
+
+    transition:0.3s;
+}
+
+.software-grid span:hover{
+
+    background:white;
+
+    color:black;
+}
+
+/* ---------- MOBILE ---------- */
+
+@media(max-width:700px){
+
+    nav{
+
+        flex-direction:column;
+
+        gap:18px;
+
+        padding:20px;
+    }
+
+    .hero h1{
+
+        font-size:55px;
+    }
+
+    .hero p{
+
+        font-size:18px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAV -->
+
+<nav>
+
+<div class="logo">
+Mohammed
+</div>
+
+<div class="nav-links">
+
+<a href="index.html">Home</a>
+<a href="research.html">Research</a>
+<a href="gallery.html">Gallery</a>
+<a href="devices.html">Devices</a>
+
+</div>
+
+</nav>
+
+<!-- HERO -->
+
+<div class="hero">
+
+<h1>
+Devices & Tools
+</h1>
+
+<p>
+Advanced characterization systems, microscopy platforms,
+diffraction techniques, and computational tools used throughout my research journey.
+</p>
+
+</div>
+
+<!-- DEVICES -->
+
+<div class="section">
+
+<div class="grid">
+
+<div class="card">
+
+<h2>
+Hitachi S-4800 FESEM
+</h2>
+
+<p>
+Field-emission scanning electron microscope used for high-resolution surface morphology and microstructural characterization.
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>
+Zeiss Sigma FESEM
+</h2>
+
+<p>
+Advanced FESEM platform for imaging, compositional analysis, and corrosion characterization.
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>
+ThermoFisher Helios Hydra PFIB/SEM
+</h2>
+
+<p>
+Multi-ion plasma focused ion beam system for cross-sectioning, tomography, and advanced materials analysis.
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>
+Bruker D8D Plus XRD-SAXS
+</h2>
+
+<p>
+Combined diffraction and small-angle scattering system for structural and phase investigations.
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>
+Bruker D8 XRD
+</h2>
+
+<p>
+X-ray diffraction platform for crystallographic and phase analysis of materials and oxides.
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>
+JEOL JEM-ARM200CF S/TEM
+</h2>
+
+<p>
+Aberration-corrected transmission electron microscope for atomic-scale characterization and elemental mapping.
+</p>
+
+</div>
+
+</div>
+
+<!-- SOFTWARE -->
+
+<div class="software">
+
+<h2>
+Software & Computational Tools
+</h2>
+
+<div class="software-grid">
+
+<span>MATLAB</span>
+<span>Python</span>
+<span>Origin</span>
+<span>ImageJ</span>
+<span>Thermo-Calc</span>
+<span>FactSage</span>
+<span>HighScore Plus</span>
+<span>GSAS-II</span>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
