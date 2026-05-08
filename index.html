@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Mohammed Alawamleh</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
+
+/* ---------------- GLOBAL ---------------- */
 
 *{
     margin:0;
@@ -22,275 +27,33 @@ html{
 }
 
 body{
-    <div class="background-animation">
 
-  <span></span>
-  <span></span>
-  <span></span>
+    font-family:'Outfit',sans-serif;
 
-</div>
-    font-family:'Poppins',sans-serif;
     background:#050505;
+
     color:white;
+
     overflow-x:hidden;
 }
 
-/* ---------- NAVBAR ---------- */
+/* ---------------- ANIMATED BACKGROUND ---------------- */
 
-nav{
-    position:fixed;
-    width:100%;
-    top:0;
-    left:0;
-    z-index:1000;
-
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-
-    padding:28px 70px;
-
-    background:rgba(0,0,0,0.25);
-    backdrop-filter:blur(10px);
-}
-
-.logo{
-    font-size:24px;
-    font-weight:700;
-    letter-spacing:1px;
-}
-
-.nav-links{
-    display:flex;
-    gap:35px;
-}
-
-.nav-links a{
-    text-decoration:none;
-    color:#d0d0d0;
-    font-size:14px;
-    transition:0.3s;
-}
-
-.nav-links a:hover{
-    color:white;
-}
-
-/* ---------- HERO ---------- */
-
-.hero{
-    min-height:100vh;
-
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-
-    padding:120px 8% 50px 8%;
-
-    background:
-    radial-gradient(circle at top left,
-    rgba(0,120,255,0.15),
-    transparent 30%),
-
-    linear-gradient(to right,
-    #050505 40%,
-    #111111 100%);
-}
-
-.hero-text{
-    flex:1;
-    max-width:700px;
-}
-
-.hero-text h1{
-    font-size:clamp(60px,8vw,120px);
-    line-height:0.95;
-    margin-bottom:25px;
-}
-
-.hero-text h2{
-    font-size:28px;
-    color:#bdbdbd;
-    font-weight:400;
-    margin-bottom:30px;
-}
-
-.hero-text p{
-    color:#cfcfcf;
-    line-height:1.8;
-    font-size:18px;
-    margin-bottom:40px;
-}
-
-/* ---------- ICONS ---------- */
-
-.icons{
-    display:flex;
-    gap:18px;
-}
-
-.icons a{
-    width:52px;
-    height:52px;
-
-    border-radius:50%;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    text-decoration:none;
-
-    color:white;
-
-    border:1px solid rgba(255,255,255,0.2);
-
-    transition:0.3s;
-
-    font-size:18px;
-}
-
-.icons a:hover{
-    background:white;
-    color:black;
-    transform:translateY(-5px);
-}
-
-/* ---------- IMAGE ---------- */
-
-.hero-image{
-    flex:1;
-
-    display:flex;
-    justify-content:center;
-}
-
-.hero-image img{
-
-    width:420px;
-    height:520px;
-
-    object-fit:cover;
-
-    border-radius:25px;
-
-    box-shadow:
-    0 0 50px rgba(255,255,255,0.08);
-
-}
-
-/* ---------- SECTIONS ---------- */
-
-section{
-    min-height:100vh;
-    padding:120px 8%;
-    border-top:1px solid rgba(255,255,255,0.08);
-}
-
-section h2{
-    font-size:52px;
-    margin-bottom:30px;
-}
-
-section p{
-    color:#c5c5c5;
-    line-height:1.9;
-    max-width:900px;
-    font-size:18px;
-}
-
-/* ---------- CARDS ---------- */
-
-.grid{
-    display:grid;
-
-    grid-template-columns:
-    repeat(auto-fit,minmax(260px,1fr));
-
-    gap:25px;
-
-    margin-top:50px;
-}
-
-.card{
-
-    background:#111;
-
-    border:1px solid rgba(255,255,255,0.08);
-
-    border-radius:22px;
-
-    padding:30px;
-
-    transition:0.3s;
-}
-
-.card:hover{
-    transform:translateY(-8px);
-    background:#171717;
-}
-
-.card h3{
-    margin-bottom:15px;
-    font-size:24px;
-}
-
-.card p{
-    font-size:15px;
-}
-
-/* ---------- MOBILE ---------- */
-
-@media(max-width:1000px){
-
-    .hero{
-        flex-direction:column;
-        text-align:center;
-        gap:50px;
-    }
-
-    .hero-text{
-        max-width:100%;
-    }
-
-    .icons{
-        justify-content:center;
-    }
-
-    .hero-image img{
-        width:320px;
-        height:420px;
-    }
-
-}
-
-@media(max-width:700px){
-
-    nav{
-        padding:20px;
-        flex-direction:column;
-        gap:20px;
-    }
-
-    .nav-links{
-        flex-wrap:wrap;
-        justify-content:center;
-        gap:18px;
-    }
-
-    section{
-        padding:100px 25px;
-    }
-
-}
 .background-animation{
+
     position:fixed;
+
     width:100%;
     height:100%;
+
     top:0;
     left:0;
+
     overflow:hidden;
-    z-index:-1;
+
+    z-index:0;
+
+    pointer-events:none;
 }
 
 .background-animation span{
@@ -299,70 +62,410 @@ section p{
 
     border-radius:50%;
 
-    background:rgba(255,255,255,0.05);
-
-    filter:blur(40px);
+    filter:blur(70px);
 
     animation:float 18s infinite ease-in-out;
 }
 
 .background-animation span:nth-child(1){
 
-    width:300px;
-    height:300px;
+    width:420px;
+    height:420px;
 
-    left:10%;
-    top:20%;
+    left:-5%;
+    top:10%;
 
-    background:rgba(0,120,255,0.15);
-
+    background:rgba(0,120,255,0.18);
 }
 
 .background-animation span:nth-child(2){
 
-    width:250px;
-    height:250px;
+    width:320px;
+    height:320px;
 
-    right:10%;
-    top:50%;
+    right:5%;
+    top:20%;
 
-    background:rgba(255,255,255,0.07);
+    background:rgba(255,255,255,0.08);
 
-    animation-delay:5s;
+    animation-delay:4s;
 }
 
 .background-animation span:nth-child(3){
 
-    width:200px;
-    height:200px;
+    width:280px;
+    height:280px;
 
-    left:40%;
-    bottom:10%;
+    left:35%;
+    bottom:5%;
 
     background:rgba(0,120,255,0.12);
 
-    animation-delay:10s;
+    animation-delay:8s;
 }
 
 @keyframes float{
 
     0%{
-        transform:translateY(0px) translateX(0px);
+        transform:translate(0px,0px);
     }
 
     50%{
-        transform:translateY(-40px) translateX(30px);
+        transform:translate(40px,-50px);
     }
 
     100%{
-        transform:translateY(0px) translateX(0px);
+        transform:translate(0px,0px);
     }
 
 }
+
+/* ---------------- MAIN LAYERS ---------------- */
+
+nav,
+.hero,
+section{
+    position:relative;
+    z-index:1;
+}
+
+/* ---------------- NAVBAR ---------------- */
+
+nav{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:space-between;
+    align-items:center;
+
+    padding:28px 70px;
+
+    background:rgba(0,0,0,0.22);
+
+    backdrop-filter:blur(10px);
+
+    z-index:1000;
+}
+
+.logo{
+
+    font-size:30px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+}
+
+.nav-links{
+
+    display:flex;
+
+    gap:35px;
+}
+
+.nav-links a{
+
+    text-decoration:none;
+
+    color:#d2d2d2;
+
+    font-size:15px;
+
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+
+    color:white;
+}
+
+/* ---------------- HERO ---------------- */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:space-between;
+
+    padding:140px 8% 60px 8%;
+
+    background:
+    linear-gradient(to right,
+    rgba(5,5,5,0.75) 40%,
+    rgba(10,10,10,0.45) 100%);
+}
+
+.hero-text{
+
+    flex:1;
+
+    max-width:760px;
+}
+
+.hero-text h1{
+
+    font-size:clamp(70px,8vw,135px);
+
+    line-height:0.92;
+
+    margin-bottom:25px;
+
+    font-weight:800;
+
+    letter-spacing:-4px;
+}
+
+.hero-text h2{
+
+    font-size:32px;
+
+    color:#d0d0d0;
+
+    font-weight:300;
+
+    margin-bottom:30px;
+}
+
+.hero-text p{
+
+    color:#c8c8c8;
+
+    line-height:1.8;
+
+    font-size:19px;
+
+    max-width:650px;
+
+    margin-bottom:45px;
+}
+
+/* ---------------- ICONS ---------------- */
+
+.icons{
+
+    display:flex;
+
+    gap:18px;
+}
+
+.icons a{
+
+    width:58px;
+    height:58px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    text-decoration:none;
+
+    color:white;
+
+    border:1px solid rgba(255,255,255,0.18);
+
+    background:rgba(255,255,255,0.04);
+
+    transition:0.35s;
+
+    font-size:18px;
+}
+
+.icons a:hover{
+
+    background:white;
+
+    color:black;
+
+    transform:translateY(-6px);
+}
+
+/* ---------------- IMAGE ---------------- */
+
+.hero-image{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+}
+
+.hero-image img{
+
+    width:540px;
+
+    max-width:100%;
+
+    object-fit:contain;
+
+    filter:
+    drop-shadow(0 0 60px rgba(255,255,255,0.08));
+}
+
+/* ---------------- SECTIONS ---------------- */
+
+section{
+
+    min-height:100vh;
+
+    padding:130px 8%;
+
+    border-top:1px solid rgba(255,255,255,0.06);
+}
+
+section h2{
+
+    font-size:58px;
+
+    margin-bottom:35px;
+}
+
+section p{
+
+    color:#c5c5c5;
+
+    line-height:2;
+
+    font-size:19px;
+
+    max-width:950px;
+}
+
+/* ---------------- GRID ---------------- */
+
+.grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+    gap:28px;
+
+    margin-top:60px;
+}
+
+.card{
+
+    background:rgba(255,255,255,0.04);
+
+    border:1px solid rgba(255,255,255,0.08);
+
+    border-radius:25px;
+
+    padding:35px;
+
+    transition:0.35s;
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    background:rgba(255,255,255,0.06);
+}
+
+.card h3{
+
+    font-size:26px;
+
+    margin-bottom:18px;
+}
+
+.card p{
+
+    font-size:15px;
+
+    line-height:1.9;
+}
+
+/* ---------------- MOBILE ---------------- */
+
+@media(max-width:1000px){
+
+    .hero{
+
+        flex-direction:column;
+
+        text-align:center;
+
+        gap:60px;
+    }
+
+    .hero-text{
+
+        max-width:100%;
+    }
+
+    .icons{
+
+        justify-content:center;
+    }
+
+    .hero-image img{
+
+        width:340px;
+    }
+
+}
+
+@media(max-width:700px){
+
+    nav{
+
+        padding:20px;
+
+        flex-direction:column;
+
+        gap:18px;
+    }
+
+    .nav-links{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+        gap:18px;
+    }
+
+    section{
+
+        padding:100px 25px;
+    }
+
+}
+
 </style>
+
 </head>
 
 <body>
+
+<!-- BACKGROUND -->
+
+<div class="background-animation">
+
+<span></span>
+<span></span>
+<span></span>
+
+</div>
 
 <!-- NAVBAR -->
 
@@ -406,7 +509,9 @@ University of Alberta · Advanced Materials · Characterization · Research
 
 <div class="icons">
 
-<a href="mailto:alawamle@ualberta.ca">✉</a>
+<a href="mailto:alawamle@ualberta.ca">
+✉
+</a>
 
 <a href="https://www.linkedin.com/in/mohammed-alawamleh" target="_blank">
 in
@@ -433,8 +538,6 @@ f
 </div>
 
 <!-- ABOUT -->
-
-<section id="about">
 
 <section id="about">
 
@@ -497,24 +600,39 @@ through academia, engineering, and life in Canada.
 <div class="grid">
 
 <div class="card">
-<h3>Materials Characterization</h3>
+
+<h3>
+Materials Characterization
+</h3>
+
 <p>
 SEM, EDS, XRD, and advanced analytical methods for studying material degradation and microstructure evolution.
 </p>
+
 </div>
 
 <div class="card">
-<h3>Advanced Materials</h3>
+
+<h3>
+Advanced Materials
+</h3>
+
 <p>
 Exploring alloy behavior, phase stability, oxidation, and material performance under extreme environments.
 </p>
+
 </div>
 
 <div class="card">
-<h3>Scientific Modeling</h3>
+
+<h3>
+Scientific Modeling
+</h3>
+
 <p>
 Thermodynamic calculations and computational tools for understanding material systems and reactions.
 </p>
+
 </div>
 
 </div>
@@ -525,11 +643,14 @@ Thermodynamic calculations and computational tools for understanding material sy
 
 <section id="gallery">
 
-<h2>Gallery</h2>
+<h2>
+Gallery
+</h2>
 
 <p>
 Research images, microscopy results, experimental setups,
-conference moments, and scientific visualizations will be presented here.
+conference moments, scientific visualizations,
+travel photography, and selected moments from academic life will appear here.
 </p>
 
 </section>
@@ -538,29 +659,46 @@ conference moments, and scientific visualizations will be presented here.
 
 <section id="devices">
 
-<h2>Devices & Tools</h2>
+<h2>
+Devices & Tools
+</h2>
 
 <div class="grid">
 
 <div class="card">
-<h3>SEM / EDS</h3>
+
+<h3>
+SEM / EDS
+</h3>
+
 <p>
 Surface characterization and elemental analysis of materials and degradation products.
 </p>
+
 </div>
 
 <div class="card">
-<h3>XRD</h3>
+
+<h3>
+XRD
+</h3>
+
 <p>
 Phase identification and crystallographic analysis of alloys and oxides.
 </p>
+
 </div>
 
 <div class="card">
-<h3>Thermo-Calc & FactSage</h3>
+
+<h3>
+Thermo-Calc & FactSage
+</h3>
+
 <p>
 Thermodynamic modeling for materials systems and phase stability.
 </p>
+
 </div>
 
 </div>
@@ -571,11 +709,14 @@ Thermodynamic modeling for materials systems and phase stability.
 
 <section id="life">
 
-<h2>Life</h2>
+<h2>
+Life
+</h2>
 
 <p>
 A collection of moments from academic life, travel,
-conferences, Canada, research experiences, and personal interests.
+Canada, conferences, research experiences,
+photography, landscapes, trains, and the strange balance between engineering and life.
 </p>
 
 </section>
@@ -584,7 +725,9 @@ conferences, Canada, research experiences, and personal interests.
 
 <section id="contact">
 
-<h2>Contact</h2>
+<h2>
+Contact
+</h2>
 
 <p>
 Email:
@@ -594,4 +737,5 @@ alawamle@ualberta.ca
 </section>
 
 </body>
+
 </html>
