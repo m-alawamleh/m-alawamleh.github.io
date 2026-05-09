@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Research</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Outfit',sans-serif;
+
+    background:#050505;
+
+    color:white;
+
+    overflow-x:hidden;
+}
+
+/* ---------- NAV ---------- */
+
+nav{
+
+    position:fixed;
+
+    width:100%;
+
+    top:0;
+    left:0;
+
+    display:flex;
+
+    justify-content:space-between;
+    align-items:center;
+
+    padding:28px 70px;
+
+    background:rgba(0,0,0,0.35);
+
+    backdrop-filter:blur(10px);
+
+    z-index:1000;
+}
+
+.logo{
+
+    font-size:28px;
+
+    font-weight:700;
+}
+
+.nav-links{
+
+    display:flex;
+
+    gap:35px;
+}
+
+.nav-links a{
+
+    text-decoration:none;
+
+    color:#d0d0d0;
+
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+
+    color:white;
+}
+
+/* ---------- HERO ---------- */
+
+.hero{
+
+    padding:180px 8% 80px 8%;
+
+    text-align:center;
+}
+
+.hero h1{
+
+    font-size:80px;
+
+    margin-bottom:25px;
+}
+
+.hero p{
+
+    color:#c0c0c0;
+
+    font-size:22px;
+
+    max-width:950px;
+
+    margin:auto;
+
+    line-height:1.8;
+}
+
+/* ---------- SECTION ---------- */
+
+.section{
+
+    padding:80px 8%;
+}
+
+/* ---------- GRID ---------- */
+
+.grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(320px,1fr));
+
+    gap:30px;
+}
+
+/* ---------- CARD ---------- */
+
+.card{
+
+    background:rgba(255,255,255,0.04);
+
+    border:1px solid rgba(255,255,255,0.08);
+
+    border-radius:28px;
+
+    padding:35px;
+
+    transition:0.35s;
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    background:rgba(255,255,255,0.06);
+}
+
+.card h2{
+
+    font-size:28px;
+
+    margin-bottom:20px;
+}
+
+.card p{
+
+    color:#c8c8c8;
+
+    line-height:1.9;
+
+    font-size:16px;
+}
+
+/* ---------- MOBILE ---------- */
+
+@media(max-width:700px){
+
+    nav{
+
+        flex-direction:column;
+
+        gap:18px;
+
+        padding:20px;
+    }
+
+    .hero h1{
+
+        font-size:55px;
+    }
+
+    .hero p{
+
+        font-size:18px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAV -->
+
+<nav>
+
+<div class="logo">
+Mohammed
+</div>
+
+<div class="nav-links">
+
+<a href="index.html">Home</a>
+<a href="research.html">Research</a>
+<a href="devices.html">Devices</a>
+
+</div>
+
+</nav>
+
+<!-- HERO -->
+
+<div class="hero">
+
+<h1>
+Research
+</h1>
+
+<p>
+My research focuses on advanced materials, characterization techniques,
+high-temperature material behavior, degradation mechanisms,
+and scientific analysis using experimental and computational approaches.
+</p>
+
+</div>
+
+<!-- RESEARCH AREAS -->
+
+<div class="section">
+
+<div class="grid">
+
+<div class="card">
+
+<h2>
+Materials Characterization
+</h2>
+
+<p>
+Using SEM, EDS, XRD, TEM, and advanced microscopy techniques
+to investigate microstructure evolution, degradation behavior,
+surface morphology, and phase transformations in materials systems.
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>
+High-Temperature Materials
+</h2>
+
+<p>
+Studying material behavior under demanding environments,
+including oxidation, degradation, thermal stability,
+and long-term structural performance.
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>
+Thermodynamic Modeling
+</h2>
+
+<p>
+Applying computational thermodynamics and scientific modeling tools
+to understand phase stability, material interactions,
+and reaction mechanisms in complex systems.
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>
+Scientific Visualization
+</h2>
+
+<p>
+Developing scientific figures, animations, visual simulations,
+and graphical representations to communicate complex engineering concepts clearly.
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>
+Synchrotron Science
+</h2>
+
+<p>
+Strong interest in synchrotron radiation techniques
+and their applications in advanced materials characterization and analysis.
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>
+Experimental Research
+</h2>
+
+<p>
+Designing and conducting experimental investigations,
+materials testing, analytical measurements,
+and research workflows for engineering studies.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
